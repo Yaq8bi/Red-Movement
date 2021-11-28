@@ -3,14 +3,13 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    
     /*border: 2px solid red;*/
 }
 body{
-    background: linear-gradient(30deg,black,red,goldenrod);
+    background: linear-gradient(35deg,black,rgba(158, 7, 7, 0.801),black);
 }
 nav{
-    background: rgba(0, 0, 0, 0.704);
+    background: #000;
     padding:2%;
     display: flex;
     align-items: center;
@@ -19,7 +18,7 @@ nav{
     max-height: 60px;
     overflow: hidden;
     transition: all 5s ease;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
 }
 nav:hover{
     min-height: 50vh;
@@ -34,7 +33,7 @@ main{
 only for indication*/
 .citroen{
     position: absolute;
-    left: 45vw;
+    left: 40vw;
     filter: invert(80%);
     transform: rotate(45deg);
     width: 30px;
@@ -79,12 +78,13 @@ only for indication*/
     padding-left: 20px;
     /*border-bottom:2px solid white;*/
 }
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(131, 49, 29, 0.801);
-    width: 95%;
+    background-color: rgba(97, 20, 20, 0.986);
+    width: 60vw;
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
@@ -92,12 +92,13 @@ only for indication*/
 }
 .container .wall{
     max-width: 50vw;
-    margin: 5vh 0 0;
+    margin: 5vh 0 5vh 0;
     border-radius: 1rem;
-    border: 3px solid red;
+    box-shadow: rgba(0, 0, 0, 0.596) 0px 19px 38px, rgba(0, 0, 0, 0.336) 0px 15px 12px;
 }
 .info-box{
-    background: rgba(204, 99, 30, 0.486);
+    background: rgba(158, 1, 1, 0.89);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     min-width: 50vw;
     padding: 10px;
     margin: 10px;
@@ -119,7 +120,8 @@ only for indication*/
     display: flex;
     align-items: center;
     text-transform: capitalize;
-    margin: 10px;
+    margin: 0px;
+    padding: 5px;
     color: #f5cfcfb2;
     border-bottom: 1px solid rgba(255, 166, 0, 0.801);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -128,29 +130,36 @@ only for indication*/
     border-radius: 1rem;
     width: 40px;
     margin: 10px;
-    border: 2px solid rgb(255, 60, 0);
+    border: 2px solid rgba(192, 132, 4, 0.89);
 }
 .mini-text{
     min-height: 10vh;
+    width: 40vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #f2f2f2bd;
-    text-shadow: .05em .05em red;
-    background-color: rgba(97, 27, 27, 0.24);
+    color: rgba(255, 255, 255, 0.750);
+    background-color: rgba(150, 105, 105, 0.356);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
+    margin:30px 5px;
     padding: 5px 20px ;
 }
 
-
-
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
    .citroen{
        left: 25vw;
    }
+   .container{
+       width: 85vw;
+   }
    .container .wall{
-       min-width:90%;
+       min-width:85%;
+   }
+   .info-box{
+       max-width: 90%;
+   }
+   .mini-text{
+       width: 70vw;
    }
   }
